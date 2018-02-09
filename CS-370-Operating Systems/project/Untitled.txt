@@ -1,0 +1,144 @@
+Xen is a virtual open source project developed by the Computer Laboratory of the University of Cambridge. Xen can safely execute multiple virtual machines on a set of physical hardware, which is extremely close to the operating platform and has the least resources. Xen is known for its high-performance and acquiring less resources, and thus win a high degree of recognition and support from IBM, AMD, HP, Red Hat and Novell and many other world-class hardware and software manufacturers.Xen, based on X86 architecture, is a virtualization technology that has fastest growing speed, the most stable performance and minimal sources. Xen can safely execute multiple virtual machines on a set of physical hardware, and is a perfect open source combination with Linux. Novell SUSE Linux Enterprise Server is the first to use Xen virtualization technology. It is particularly suitable for server application integration, which can effectively save operating costs, improve equipment utilization, maximize the use of data center IT infrastructure.
+
+In the Xen environment, there are two main components. One is the virtual machine monitor (VMM), also known as hypervisor. The hypervisor layer is the first layer of hardware that must be loaded first between the hardware and the virtual machine. Once the hypervisor is loaded, you can deploy the virtual machine. In Xen, the virtual machine is called "domain". In these virtual machines, one of them plays a very important role, is domain0, has a very high privilege. Typically, the operating system installed before any virtual machine has this privilege.
+
+Domain0 is responsible for some specialized work. Since the hypervisor does not contain any drivers for hardware conversations and interfaces to the administrator, these drivers are provided by domain0. With domain0, administrators can use some Xen tools to create other virtual machines (the Xen term is called domainU). These domainU are also called unprivileged domains. This is because in the i386-based CPU architecture, they will never enjoy the highest priority, only domain0 can.
+In domain0, an Xend process is also loaded. This process manages all other virtual machines and provides access to these virtual machine consoles. When creating a virtual machine, the administrator uses the configuration program to talk directly to domain0.
+
+As the Xen approach to virtualization has taken a big step forward, the founders of Xen set up their own company, XenSource, which has been acquired by Citrix later. The goal of XenSource was to provide a complete virtualization solution based on the Xen hypervisor in order to compete with other virtualization products such as VMware ESX. Other companies also have integrated Xen hypervisors in their own products. For example, Linux manufacturers Red Hat and Novell have included their own versions of Xen in their operating systems. Since most of Xen is open source, these solutions for virtualization are very similar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+KVM is a hardware-based virtual machine (VM) implementation proposed by an open-source organization called Qumrant in Israel in October 2006. The Linux 2.6.20 kernel, released in February 2007, is the first time that included KVM. In fact KVM is only part of the virtualization solution, and it needs the underlying processor support for multiple operating systems to provide virtualization processors.
+KVM is an open-source Linux native full-virtualization solution based on virtualization extensions (Intel VT or AMD-V) for X86 hardware. In KVM, virtual machines are implemented as regular Linux processes that are scheduled by standard Linux dispatchers; each virtual CPU of the virtual machine is implemented as a regular Linux process. This allows KVM to use the existing functionality of the Linux kernel. As the virtualization hardware to provide a new framework to support the operating system directly in the above operation, without the need for binary conversion, reducing the associated performance overhead, greatly simplifying the VMM design, making VMM performance more powerful. Beginning in 2005, Intel in its processor product line to promote Intel Virtualization Technology is IntelVT technology.
+In addition to CPU virtualization, memory virtualization is also achieved by the KVM. In fact, memory virtualization is often a virtual machine to achieve the most complex part. CPU memory management unit MMU is through the form of the page table to run the virtual address into the actual physical address. In virtual machine mode, the MMU's page table must perform two address translations in one query. Because in addition to the virtual address of the client program to convert the physical address of the client, but also the client physical address into a real physical address. Because KVM is only a simple virtualization module, so its memory management is not self-realization, need the help of Linux kernel memory management. KVM can use any storage supported by Linux, in the realization of the driver, directly with the help of the Linux kernel to drive any hardware. KVM architecture is very simple, is a module of the kernel, the user space through QEMU simulation hardware provided to the virtual machine to use, a virtual machine is a common Linux process, through the management of this process, you can complete the management of the virtual machine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VMware (Virtual Machine ware) is a "virtual PC" software company, providing virtualization solutions. VMware virtualization directly introduces a streamlined software layer into the computer hardware or above host operating system. It contains a dynamic and transparent way to allocate hardware resources of the virtual machine monitor. In order to achieve multiple operating systems running on the same physical machine at the same time, sharing hardware resources with each other is applied.
+VMware first introduced virtualization technology to the x86 computing platform in 1999. VMware virtualization pulled the operating system away from the underlying hardware on which it was running and provided standardized virtual hardware for the operating system and its applications. As a result, a virtual machine can run one or more shared processors at the same time independently.
+VMWare products enable to run two or more Windows, DOS, and LINUX systems simultaneously on a single machine. Compared with the “multi-boot” system, VMWare uses a completely different concept. Multi-boot system can only run a system at a time, the system switches need to restart the machine. VMWare is truly “running” at the same time, multiple operating systems on the main system platform, as standard Windows applications that switch. And each operating system you can carry out a virtual partition, the configuration does not affect the real hard drive data, you can even network card will be used to connect several virtual machine network card for a LAN, extremely convenient.
+The software layer contains a virtual machine monitor (or “hypervisor”) that allocates hardware resources dynamically and transparently. Multiple operating systems can run concurrently on a single physical machine, sharing hardware resources with each other. Virtual machines are fully compatible with all standard x86 operating systems, applications, and device drivers because the entire computer, including the CPU, memory, operating system, and network devices, is packaged. You can safely run multiple operating systems and applications on a single computer at the same time, and each operating system and application can access the resources it needs when needed.
+In all virtualization software technology to optimize and manage the IT environment, VMware virtualization technology has been the most widely used, from the desktop environment to the data center are involved.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In the 1960s, in order to improve the utilization of large-scale computer hard disk, the concept of virtualization technology was first introduced. IBM was the lead in this technology to by realizing large-scale computer hard disk logical partition, in the form of a number of independent virtual machine multitasking, and run multiple applications and processes.
+In the 1980s, built-in client-server applications, as well as low-cost X86 servers and desktop distributed computing technology, replaced the expensive virtualization technology.
+In the 1990s, the widespread use of Windows and Linux as a server operating system, while laying the X86 industry standard status, there have been some new problems, that infrastructure utilization is low, the physical infrastructure costs are increasingly high, IT management costs continue to rise, failover and catastrophe protection, user IT operation and maintenance costs rise straight up. Computer virtualization technology refers to the computer system components using software methods and hardware technology to simulate in order to achieve multiple virtual hardware platform, the system platform independent of each other, do not interfere with each other, one can install any on top of it operating system.
+In order to achieve virtualization, a control program is designed and inserted between the hardware layer and the operating system layer, the control program called the hypervisor or virtual machine management program, its role is to abstract the hardware layer, to achieve physical Virtualization, so that the operating system does not need to know what kind of hardware running on top.
+From 2008, virtualization technology has been applied into a number of applications, and has been accepted by the public. The goal of virtualization is to simplify the IT infrastructure by increasing the utilization and flexibility of IT resources and reducing IT operational costs through technologies such as processor virtualization, memory virtualization, I/O virtualization and network virtualization And management costs.
+Virtualization needs to address server and operating system virtualization, storage virtualization, and system management virtualization and a series of issues. Today, virtualization is starting to evolve from early storage virtualization into server and operating system virtualization, and holistic virtualization.
+At the bottom of the virtualization solution is the need to virtualize computer hardware that may or may not directly support virtualization, requiring support from the hypervisor, which can be viewed as the abstraction of platform hardware and the operating system. In some cases, this system management program is an operating system, the system management program on top of the client operating system, also known as virtual machines.、
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The most popular virtualization approach uses a software called a hypervisor to create an abstraction layer between the virtual server and the underlying hardware. VMware and Microsoft Virtual PC represent two commercial products of this approach, while the core-based virtual machine (KVM) is an open source product for Linux systems.
+The hypervisor can capture CPU instructions and act as an intermediary for instruction access to the hardware controller and peripherals. Thus, full virtualization technology allows almost any operating system can be installed without modification to the virtual server, and they do not know their own running in a virtual environment. The main disadvantage is that the hypervisor brings overhead to the processor.
+In a fully virtualized environment, the hypervisor runs on the bare hardware, acting as the host operating system, and the hypervisor-managed virtual server runs the guest operating system (guest OS).

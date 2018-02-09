@@ -1,0 +1,126 @@
+*****************************************************************************
+Jim Xu
+*****************************************************************************
+public static final int numProducers = 2; //Choose 1 or 2 
+public static final int numConsumers = 1; //Choose 1 or 2
+java Producerconsumer 3 10 10
+Producer 0 starting...
+Producer 1 starting...
+Comsumer 0 starting...
+Producer 0: Placed 45 at Location 0 at Time: 2016/11/10 09:41:47.00712
+Comsumer 0: Removed 45 at Location 0 at Time: 2016/11/10 09:41:47.00726
+Producer 1: Placed 31 at Location 1 at Time: 2016/11/10 09:41:47.00727
+Producer 0: Placed 8 at Location 2 at Time: 2016/11/10 09:41:47.00728
+Comsumer 0: Removed 31 at Location 1 at Time: 2016/11/10 09:41:47.00728
+Producer 1: Placed 98 at Location 0 at Time: 2016/11/10 09:41:47.00728
+Producer 0: Placed 52 at Location 1 at Time: 2016/11/10 09:41:47.00729
+Comsumer 0: Removed 8 at Location 2 at Time: 2016/11/10 09:41:47.00729
+Producer 1: Placed 61 at Location 2 at Time: 2016/11/10 09:41:47.00730
+Producer 0: Unable to insert, buffer full, at Time: 2016/11/10 09:41:47.00731
+Comsumer 0: Removed 98 at Location 0 at Time: 2016/11/10 09:41:47.00731
+Producer 0: Placed 69 at Location 0 at Time: 2016/11/10 09:41:47.00731
+Producer 1: Unable to insert, buffer full, at Time: 2016/11/10 09:41:47.00731
+Comsumer 0: Removed 52 at Location 1 at Time: 2016/11/10 09:41:47.00732
+Producer 1: Placed 90 at Location 1 at Time: 2016/11/10 09:41:47.00733
+Producer 0: Unable to insert, buffer full, at Time: 2016/11/10 09:41:47.00733
+Comsumer 0: Removed 61 at Location 2 at Time: 2016/11/10 09:41:47.00734
+Producer 0: Placed 81 at Location 2 at Time: 2016/11/10 09:41:47.00734
+Producer 1: Unable to insert, buffer full, at Time: 2016/11/10 09:41:47.00735
+Comsumer 0: Removed 69 at Location 0 at Time: 2016/11/10 09:41:47.00736
+Producer 1: Placed 64 at Location 0 at Time: 2016/11/10 09:41:47.00736
+Comsumer 0: Removed 90 at Location 1 at Time: 2016/11/10 09:41:47.00737
+Producer: Finished producing 10 items.
+Comsumer 0: Removed 81 at Location 2 at Time: 2016/11/10 09:41:47.00737
+Comsumer 0: Removed 64 at Location 0 at Time: 2016/11/10 09:41:47.00739
+Comsumer 0: Unable to consume, buffer empty, at Time: 2016/11/10 09:41:47.00741
+Comsumer 0: terminated after 10 times its maximum waiting time at Time:2016/11/10 09:41:47.00743
+*****************************************************************************
+public static final int numProducers = 2; //Choose 1 or 2 
+public static final int numConsumers = 2; //Choose 1 or 2
+java Producerconsumer 5 5 10
+Producer 0 starting...
+Producer 1 starting...
+Comsumer 0 starting...
+Comsumer 1 starting...
+Producer 0: Placed 66 at Location 0 at Time: 2016/11/10 09:43:49.00498
+Comsumer 1: Removed 66 at Location 0 at Time: 2016/11/10 09:43:49.00512
+Comsumer 0: Unable to consume, buffer empty, at Time: 2016/11/10 09:43:49.00512
+Producer 1: Placed 41 at Location 1 at Time: 2016/11/10 09:43:49.00512
+Comsumer 0: terminated after 10 times its maximum waiting time at Time:2016/11/10 09:43:49.00513
+Producer 0: Placed 77 at Location 2 at Time: 2016/11/10 09:43:49.00513
+Comsumer 1: Removed 41 at Location 1 at Time: 2016/11/10 09:43:49.00513
+Comsumer 1: Removed 77 at Location 2 at Time: 2016/11/10 09:43:49.00513
+Producer 1: Placed 27 at Location 3 at Time: 2016/11/10 09:43:49.00514
+Producer 0: Placed 27 at Location 4 at Time: 2016/11/10 09:43:49.00514
+Comsumer 1: Removed 27 at Location 3 at Time: 2016/11/10 09:43:49.00515
+Comsumer 1: Removed 27 at Location 4 at Time: 2016/11/10 09:43:49.00515
+Producer 1: Placed 19 at Location 0 at Time: 2016/11/10 09:43:49.00515
+Producer 0: Placed 74 at Location 1 at Time: 2016/11/10 09:43:49.00516
+Comsumer 1: Removed 19 at Location 0 at Time: 2016/11/10 09:43:49.00516
+Producer 1: Placed 74 at Location 2 at Time: 2016/11/10 09:43:49.00517
+Producer 0: Placed 51 at Location 3 at Time: 2016/11/10 09:43:49.00517
+Comsumer 1: Removed 74 at Location 1 at Time: 2016/11/10 09:43:49.00518
+Producer 1: Placed 80 at Location 4 at Time: 2016/11/10 09:43:49.00518
+Comsumer 1: Removed 74 at Location 2 at Time: 2016/11/10 09:43:49.00519
+Producer: Finished producing 10 items.
+Comsumer 1: Removed 51 at Location 3 at Time: 2016/11/10 09:43:49.00520
+Comsumer 1: Removed 80 at Location 4 at Time: 2016/11/10 09:43:49.00521
+Comsumer 1: Unable to consume, buffer empty, at Time: 2016/11/10 09:43:49.00523
+Comsumer 1: terminated after 10 times its maximum waiting time at Time:2016/11/10 09:43:49.00524
+*****************************************************************************
+//Deadlock happens here since two consumer!!
+
+public static final int numProducers = 1; //Choose 1 or 2 
+public static final int numConsumers = 2; //Choose 1 or 2
+java Producerconsumer 4 100 8
+Producer 0 starting...
+Comsumer 0 starting...
+Comsumer 1 starting...
+Producer 0: Placed 10 at Location 0 at Time: 2016/11/10 09:45:11.00458
+Comsumer 1: Removed 10 at Location 0 at Time: 2016/11/10 09:45:11.00473
+Comsumer 0: Unable to consume, buffer empty, at Time: 2016/11/10 09:45:11.00473
+Producer 0: Placed 98 at Location 1 at Time: 2016/11/10 09:45:11.00474
+Comsumer 0: terminated after 10 times its maximum waiting time at Time:2016/11/10 09:45:11.00474
+Comsumer 1: Removed 98 at Location 1 at Time: 2016/11/10 09:45:11.00475
+Producer 0: Placed 78 at Location 2 at Time: 2016/11/10 09:45:11.00476
+Comsumer 1: Removed 78 at Location 2 at Time: 2016/11/10 09:45:11.00476
+Producer 0: Placed 98 at Location 3 at Time: 2016/11/10 09:45:11.00477
+Comsumer 1: Removed 98 at Location 3 at Time: 2016/11/10 09:45:11.00477
+Producer 0: Placed 20 at Location 0 at Time: 2016/11/10 09:45:11.00479
+Comsumer 1: Removed 20 at Location 0 at Time: 2016/11/10 09:45:11.00479
+Producer 0: Placed 65 at Location 1 at Time: 2016/11/10 09:45:11.00480
+Comsumer 1: Removed 65 at Location 1 at Time: 2016/11/10 09:45:11.00480
+Producer 0: Placed 76 at Location 2 at Time: 2016/11/10 09:45:11.00482
+Comsumer 1: Removed 76 at Location 2 at Time: 2016/11/10 09:45:11.00482
+Producer 0: Placed 66 at Location 3 at Time: 2016/11/10 09:45:11.00483
+Comsumer 1: Removed 66 at Location 3 at Time: 2016/11/10 09:45:11.00484
+Comsumer 1: Unable to consume, buffer empty, at Time: 2016/11/10 09:45:11.00485
+Comsumer 1: terminated after 10 times its maximum waiting time at Time:2016/11/10 09:45:11.00487
+*****************************************************************************
+public static final int numProducers = 1; //Choose 1 or 2 
+public static final int numConsumers = 1; //Choose 1 or 2
+java Producerconsumer 5 5 10
+Producer 0 starting...
+Comsumer 0 starting...
+Producer 0: Placed 98 at Location 0 at Time: 2016/11/10 09:46:46.00909
+Comsumer 0: Removed 98 at Location 0 at Time: 2016/11/10 09:46:46.00922
+Producer 0: Placed 74 at Location 1 at Time: 2016/11/10 09:46:46.00923
+Comsumer 0: Removed 74 at Location 1 at Time: 2016/11/10 09:46:46.00924
+Producer 0: Placed 91 at Location 2 at Time: 2016/11/10 09:46:46.00924
+Comsumer 0: Removed 91 at Location 2 at Time: 2016/11/10 09:46:46.00925
+Producer 0: Placed 67 at Location 3 at Time: 2016/11/10 09:46:46.00926
+Producer 0: Placed 31 at Location 4 at Time: 2016/11/10 09:46:46.00926
+Comsumer 0: Removed 67 at Location 3 at Time: 2016/11/10 09:46:46.00927
+Producer 0: Placed 58 at Location 0 at Time: 2016/11/10 09:46:46.00927
+Comsumer 0: Removed 31 at Location 4 at Time: 2016/11/10 09:46:46.00929
+Producer 0: Placed 96 at Location 1 at Time: 2016/11/10 09:46:46.00929
+Comsumer 0: Removed 58 at Location 0 at Time: 2016/11/10 09:46:46.00929
+Producer 0: Placed 36 at Location 2 at Time: 2016/11/10 09:46:46.00930
+Comsumer 0: Removed 96 at Location 1 at Time: 2016/11/10 09:46:46.00931
+Producer 0: Placed 43 at Location 3 at Time: 2016/11/10 09:46:46.00931
+Comsumer 0: Removed 36 at Location 2 at Time: 2016/11/10 09:46:46.00931
+Producer 0: Placed 90 at Location 4 at Time: 2016/11/10 09:46:46.00931
+Comsumer 0: Removed 43 at Location 3 at Time: 2016/11/10 09:46:46.00933
+Comsumer 0: Removed 90 at Location 4 at Time: 2016/11/10 09:46:46.00934
+Comsumer 0: Unable to consume, buffer empty, at Time: 2016/11/10 09:46:46.00936
+Comsumer 0: terminated after 10 times its maximum waiting time at Time:2016/11/10 09:46:46.00937
