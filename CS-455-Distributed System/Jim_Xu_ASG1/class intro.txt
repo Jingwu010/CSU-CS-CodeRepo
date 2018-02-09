@@ -1,0 +1,42 @@
+// Class Name: 	OverlayCreator
+// Class Intro:	OverlayCreator creates an connected graph with no partition
+//				each node connect with given number of other nodes
+
+// Class Name: 	StatisticsCollectorAndDisplay
+// Class Intro:	StatisticsCollectorAndDisplay stores the overlay
+//				and print overlay map
+
+// Class Name:  TCPServerThread
+// Class Intro: TCPServerThread is used for listenning incoming socket connect
+
+// Class Name:  TCPSender
+// Class Intro: TCPSender is used for send data into a given socket
+
+// Class Name:  TCPReceiverThread
+// Class Intro: TCPReceiverThread is used for listening the incoming data
+//              from the given socket
+
+// Class Name: 	RoutingCache
+// Class Intro:	RoutingCache is used for storing shortestpath information
+
+// Class Name: 	ShortestPath
+// Class Intro:	ShortestPath is calculating the shorestpath in a given map
+//		then send the data back to routing cache to store it
+
+// Class Name: 	Link
+// Class Intro:	Link is used for combining hostname, ip, port and correspondingly
+// 		tcps: TCPSender instance
+// 		tcpr: TCPReceiver instance
+
+// Class Name: 	MessagingNode
+// Class Intro:	MessagingNode is used for node-node connection and communication
+// 		MessagingNode also need to communicate with Registry to listen specific commands
+// 		MessagingNode only connect to a certain pairs of MessagingNode
+
+// Class Name: 	Node
+// Class Intro:	Node is a interface
+
+// Class Name: 	Registry
+// Class Intro:	Registry is mainly used to connect with and send request to messagingnode
+// 		Registry connect with all nodes, and create overlay and list-weights
+// 		Registry then send start request, retrieve traffic info

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selection >
+	<title >temp.xml</title>
+	<filename >test.csv</filename>
+    <destinations>
+        <id >2</id>
+	<id >5</id>
+    </destinations>
+</selection>

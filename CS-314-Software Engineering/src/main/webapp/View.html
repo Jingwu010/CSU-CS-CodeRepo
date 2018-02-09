@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>TripCo</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='grommet/css/grommet.min.css' rel='stylesheet' type='text/css'>
+    <script src="../../../src/main/resources/View.js"></script>
+    <script src="react/react-with-addons.min.js"></script>
+    <script src="react/react-dom.min.js"></script>
+    <script src="babel/browser.min.js"></script>
+    <script src="grommet/grommet.min.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    
+    <script type="text/babel">
+
+    function getData() {
+        var svgname = nameSVG();
+        return svgname;
+    }
+
+    function getXMLTitle() {
+        var xmlname = nameXML();
+        return xmlname;
+    }
+
+    function SVG(props) {
+        return <img id='map' width="100%" src={props.location}></img>;
+    }
+
+    var Accordion = Grommet.Accordion;
+    var AccordionPanel = Grommet.AccordionPanel;
+    var App = Grommet.App;
+    var Box = Grommet.Box;
+    var Button = Grommet.Button;
+    var Heading = Grommet.Heading;
+    var Paragraph = Grommet.Paragraph;
+    var Tab = Grommet.Tab;
+    var Tabs = Grommet.Tabs;
+    var Topology = Grommet.Topology;
+
+    const element = (
+        
+        <App><Box pad='medium'>
+        <Heading align="center">TripCo - Test Build #1</Heading>
+        <Heading align="center" tag="h2">Here is your trip</Heading>
+        <Tabs>
+            <Tab title="Map">
+                <Box id="mapBox">
+                <SVG location={getData()} />
+                </Box>
+            </Tab>
+            <Tab title="Itinerary">
+                <Box>
+                <Topology links={
+                    [{colorIndex: 'graph-1', ids: ['leg1', 'leg2']}]}>
+                <Topology.Parts direction="row">
+                    <Topology.Part id='leg1' status='ok' label='1' align='center' />
+                    <Topology.Parts direction="column">
+                        <Topology.Part id="leg1loc" status="unknown" justify="start"
+                            align="center">
+                            <Paragraph size="large">
+                                <b>Airport:</b> Denver International Airport
+                            </Paragraph>
+                        </Topology.Part>
+                        <Topology.Part id="leg1lat" status="unknown" justify="start"
+                            align="center">
+                            <Paragraph size="large">
+                                <b>Latitude:</b> 39.8561° N
+                            </Paragraph>
+                        </Topology.Part>
+                        <Topology.Part id="leg1lon" status="unknown" justify="start"
+                            align="center">
+                            <Paragraph size="large">
+                                <b>Longitude:</b> 104.6737° W
+                            </Paragraph>
+                        </Topology.Part>
+                    </Topology.Parts>
+                </Topology.Parts>
+                <br />
+                <br />
+                <Topology.Parts direction="row">
+                    <Topology.Part id='leg2' status='ok' label='2' align='center' />
+                    <Topology.Parts direction="column">
+                        <Topology.Part id="leg2loc" status="unknown" justify="start"
+                            align="center">
+                            <Paragraph size="large">
+                                <b>Airport:</b> Salt Lake City International Airport
+                            </Paragraph>
+                        </Topology.Part>
+                        <Topology.Part id="leg2lat" status="unknown" justify="start"
+                            align="center">
+                            <Paragraph size="large">
+                                <b>Latitude:</b> 40.7899° N
+                            </Paragraph>
+                        </Topology.Part>
+                        <Topology.Part id="leg2lon" status="unknown" justify="start"
+                            align="center">
+                            <Paragraph size="large">
+                                <b>Longitude:</b> 111.9791° W
+                            </Paragraph>
+                        </Topology.Part>
+                    </Topology.Parts>
+                </Topology.Parts>
+            </Topology>
+                </Box>
+            </Tab>
+            <Tab title="XML">
+                <Heading tag="h3">Click below for a raw XML itinerary</Heading>
+                <Button label='View XML' href={getXMLTitle()}></Button>
+            </Tab>
+        </Tabs>
+        
+        </Box></App>
+    );
+
+    ReactDOM.render(
+        element,
+        document.getElementById('content')
+    );
+    </script>
+
+</body>
+</html>

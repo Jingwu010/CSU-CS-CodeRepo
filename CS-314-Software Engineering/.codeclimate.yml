@@ -1,0 +1,16 @@
+engines:
+  checkstyle:
+    enabled: true
+    channel: "beta"
+    checks:
+      com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck:
+        enabled: false
+      com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck:
+        enabled: false
+
+ratings:
+  paths:
+  - "**.java"
+  
+exclude_paths:
+  - "src/test/"

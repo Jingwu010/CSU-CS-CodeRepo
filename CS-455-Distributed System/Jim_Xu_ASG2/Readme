@@ -1,0 +1,39 @@
+////////////////////////////////////////////////////////////
+/////
+/////                   ReadMe File
+/////   Author: Jim Xu
+/////   Finished Date: 3/7/2017
+/////   Description: SCALABLE SERVER DESIGN
+/////                USING THREAD POOLS TO MANAGE ACTIVE NETWORK CONNECTIONS
+/////   Email: jimx@rams.colostate.edu
+/////
+////////////////////////////////////////////////////////////
+
+Command Line to start:
+    1)  $make
+    2)  $make server (default setting: port-1234 thread number-10)
+    3)  $./test-scalability.sh $1 $2 $3  
+        //start client
+        // $1 $2 $3 are the command-line arguments
+        // $1 is the number of client per machine
+        // $2 is the host that server runs on
+        // $3 is addtional info print by client (-i)
+        /* the test-scalability.sh must use with file named machinelist */
+    4)  $./stop-clients.sh
+    
+Release:
+    1)  Multiple-Clients communicating with Server
+    2)  Server handle messages and send feedback to Clients
+    
+Potential Improvements:
+    1)  Server could only hold upto around 350 clients at one time
+    2)  Server could only handle upto around 1250 messages/s at one time
+    3)  Server performance fluctuates greatly when messages rate are high
+    4)  Client output numbers are slightly different from expected
+    
+Author Words:
+    1)  The program works prefectly in lab machine
+    2)  There could be some problems under tiny possibilities
+    3)  The program is based on the A2 requirements
+    4)  Contact with Author if there are some unexpected problems
+    5)  Thanks for your work and patience.

@@ -1,0 +1,28 @@
+<!-- Team specific values you must change
+GroupID - change team number which i already did in this file
+URL - change team number which i already did in this file
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+  http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.csu2017sp314.dtr14</groupId>
+  <artifactId>tripco</artifactId>
+  <packaging>jar</packaging>
+  <version>0.2-sprint</version>
+  <name>TripCo</name>
+  <url>https://github.com/csu2017sp314/DTR-14/</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>TripCo</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='grommet/css/grommet.min.css' rel='stylesheet' type='text/css'>
+    <script src="../../../src/main/resources/View.js"></script>
+    <script src="react/react-with-addons.min.js"></script>
+    <script src="react/react-dom.min.js"></script>
+    <script src="babel/browser.min.js"></script>
+    <script src="grommet/grommet.min.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    
+    <script type="text/babel">
+
+    var Accordion = Grommet.Accordion;
+    var AccordionPanel = Grommet.AccordionPanel;
+    var Anchor = Grommet.Anchor;
+    var App = Grommet.App;
+    var Box = Grommet.Box;
+    var Button = Grommet.Button;
+    var Heading = Grommet.Heading;
+    var Paragraph = Grommet.Paragraph;
+    var Tab = Grommet.Tab;
+    var Tabs = Grommet.Tabs;
+    var Topology = Grommet.Topology;
+
+    const element = (
+        <Topology links={
+[{colorIndex: 'graph-1', ids: ['leg1', 'leg2', 'leg3', 'leg4', 'leg5', 'leg6', 'leg7', 'leg8', 'leg9', 'leg10', 'leg11', 'leg12', 'leg13', 'leg14', 'leg15', 'leg16', 'leg17', 'leg18', 'leg19', 'leg20', 'leg21', 'leg22', 'leg23', 'leg24', 'leg25', 'leg26', 'leg27', 'leg28', 'leg29', 'leg30', 'leg31', 'leg32', 'leg33', 'leg34', 'leg35', 'leg36', 'leg37', 'leg38', 'leg39', 'leg40', 'leg41', 'leg42', 'leg43', 'leg44', 'leg45', 'leg46', 'leg47', 'leg48', 'leg49', 'leg50', 'leg51', 'leg52', 'leg53', 'leg54', 'leg55', 'leg56', 'leg57', 'leg58', 'leg59', 'leg60', 'leg61', 'leg62', 'leg63', 'leg64', 'leg65', 'leg66', 'leg67', 'leg68', 'leg69', 'leg70', 'leg71', 'leg72', 'leg73', 'leg74', 'leg75', 'leg76', 'leg77', 'leg78', 'leg79', 'leg80', 'leg81', 'leg82', 'leg83', 'leg84', 'leg85', 'leg86', 'leg87', 'leg88', 'leg89', 'leg90', 'leg91', 'leg92', 'leg93', 'leg94', 'leg95', 'leg96', 'leg97', 'leg98', 'leg99', 'leg100', 'leg101', 'leg102', 'leg103', 'leg104', 'leg105', 'leg106', 'leg107', 'leg108', 'leg109', 'leg110', 'leg111', 'leg112', 'leg113', 'leg114', 'leg115', 'leg116', 'leg117', 'leg118', 'leg119', 'leg120', 'leg121', 'leg122', 'leg123', 'leg124', 'leg125', 'leg126', 'leg127', 'leg128', 'leg129', 'leg130', 'leg131', 'leg132', 'leg133', 'leg134', 'leg135', 'leg136', 'leg137', 'leg138', 'leg139', 'leg140', 'leg141', 'leg142', 'leg143', 'leg144', 'leg145', 'leg146', 'leg147', 'leg148', 'leg149', 'leg150', 'leg151', 'leg152', 'leg153', 'leg154', 'leg155', 'leg156', 'leg157', 'leg158', 'leg159', 'leg160', 'leg161', 'leg162', 'leg163', 'leg164', 'leg165', 'leg166', 'leg167', 'leg168', 'leg169', 'leg170', 'leg171', 'leg172', 'leg173', 'leg174', 'leg175', 'leg176', 'leg177', 'leg178', 'leg179', 'leg180', 'leg181', 'leg182', 'leg183', 'leg184', 'leg185', 'leg186', 'leg187', 'leg188', 'leg189', 'leg190', 'leg191', 'leg192', 'leg193', 'leg194', 'leg195', 'leg196', 'leg197', 'leg198', 'leg199', 'leg200', 'leg201', 'leg202', 'leg203', 'leg204', 'leg205', 'leg206', 'leg207', 'leg208', 'leg209', 'leg210', 'leg211', 'leg212', 'leg213', 'leg214', 'leg215', 'leg216', 'leg217', 'leg218', 'leg219', 'leg220', 'leg221', 'leg222', 'leg223', 'leg224', 'leg225', 'leg226', 'leg227', 'leg228', 'leg229', 'leg230', 'leg231', 'leg232', 'leg233', 'leg234', 'leg235', 'leg236', 'leg237', 'leg238', 'leg239', 'leg240', 'leg241', 'leg242', 'leg243', 'leg244', 'leg245', 'leg246', 'leg247', 'leg248', 'leg249', 'leg250', 'leg251', 'leg252', 'leg253', 'leg254', 'leg255', 'leg256', 'leg257', 'leg258', 'leg259', 'leg260', 'leg261', 'leg262', 'leg263', 'leg264', 'leg265', 'leg266', 'leg267', 'leg268', 'leg269', 'leg270', 'leg271', 'leg272', 'leg273', 'leg274', 'leg275', 'leg276', 'leg277', 'leg278', 'leg279', 'leg280', 'leg281', 'leg282', 'leg283', 'leg284', 'leg285', 'leg286', 'leg287', 'leg288', 'leg289', 'leg290', 'leg291', 'leg292', 'leg293', 'leg294', 'leg295', 'leg296', 'leg297', 'leg298', 'leg299', 'leg300', 'leg301', 'leg302', 'leg303', 'leg304', 'leg305', 'leg306', 'leg307', 'leg308', 'leg309', 'leg310', 'leg311', 'leg312', 'leg313', 'leg314', 'leg315', 'leg316', 'leg317', 'leg318', 'leg319', 'leg320', 'leg321', 'leg322', 'leg323', 'leg324', 'leg325', 'leg326', 'leg327', 'leg328', 'leg329', 'leg330', 'leg331', 'leg332', 'leg333', 'leg334', 'leg335', 'leg336', 'leg337', 'leg338', 'leg339', 'leg340', 'leg341', 'leg342', 'leg343', 'leg344', 'leg345', 'leg346', 'leg347', 'leg348', 'leg349', 'leg350', 'leg351', 'leg352', 'leg353', 'leg354', 'leg355', 'leg356', 'leg357', 'leg358', 'leg359', 'leg360', 'leg361', 'leg362', 'leg363', 'leg364', 'leg365', 'leg366', 'leg367', 'leg368', 'leg369', 'leg370', 'leg371', 'leg372', 'leg373', 'leg374', 'leg375', 'leg376', 'leg377', 'leg378', 'leg379', 'leg380', 'leg381', 'leg382', 'leg383', 'leg384', 'leg385', 'leg386', 'leg387', 'leg388', 'leg389', 'leg390', 'leg391', 'leg392', 'leg393', 'leg394', 'leg395', 'leg396', 'leg397', 'leg398', 'leg399', 'leg400', 'leg401', 'leg402', 'leg403', 'leg404', 'leg405', 'leg406', 'leg407', 'leg408', 'leg409', 'leg410', 'leg411', 'leg412', 'leg413', 'leg414', 'leg415', 'leg416', 'leg417', 'leg418', 'leg419', 'leg420', 'leg421', 'leg422', 'leg423', 'leg424', 'leg425', 'leg426', 'leg427', 'leg428', 'leg429', 'leg430', 'leg431', 'leg432', 'leg433', 'leg434', 'leg435', 'leg436', 'leg437', 'leg438', 'leg439', 'leg440', 'leg441', 'leg442', 'leg443', 'leg444', 'leg445', 'leg446', 'leg447', 'leg448', 'leg449', 'leg450', 'leg451', 'leg452', 'leg453', 'leg454', 'leg455', 'leg456', 'leg457', 'leg458', 'leg459', 'leg460', 'leg461', 'leg462', 'leg463', 'leg464', 'leg465', 'leg466', 'leg467', 'leg468', 'leg469', 'leg470', 'leg471', 'leg472', 'leg473', 'leg474', 'leg475', 'leg476', 'leg477', 'leg478', 'leg479', 'leg480', 'leg481', 'leg482', 'leg483', 'leg484', 'leg485', 'leg486', 'leg487', 'leg488', 'leg489', 'leg490', 'leg491', 'leg492', 'leg493', 'leg494', 'leg495', 'leg496', 'leg497', 'leg498', 'leg499', 'leg500', 'leg501', 'leg502', 'leg503', 'leg504', 'leg505', 'leg506', 'leg507', 'leg508', 'leg509', 'leg510', 'leg511', 'leg512', 'leg513', 'leg514', 'leg515', 'leg516', 'leg517', 'leg518', 'leg519', 'leg520', 'leg521', 'leg522', 'leg523', 'leg524', 'leg525', 'leg526', 'leg527', 'leg528', 'leg529', 'leg530', 'leg531', 'leg532', 'leg533', 'leg534', 'leg535', 'leg536', 'leg537', 'leg538', 'leg539', 'leg540', 'leg541', 'leg542', 'leg543', 'leg544', 'leg545', 'leg546', 'leg547', 'leg548', 'leg549', 'leg550', 'leg551', 'leg552', 'leg553', 'leg554', 'leg555', 'leg556', 'leg557', 'leg558', 'leg559', 'leg560', 'leg561', 'leg562', 'leg563', 'leg564', 'leg565', 'leg566', 'leg567', 'leg568', 'leg569', 'leg570', 'leg571', 'leg572', 'leg573', 'leg574', 'leg575', 'leg576', 'leg577', 'leg578', 'leg579', 'leg580', 'leg581', 'leg582', 'leg583', 'leg584', 'leg585', 'leg586', 'leg587', 'leg588', 'leg589', 'leg590', 'leg591', 'leg592', 'leg593', 'leg594', 'leg595', 'leg596', 'leg597', 'leg598', 'leg599', 'leg600', 'leg601', 'leg602', 'leg603', 'leg604', 'leg605', 'leg606', 'leg607', 'leg608', 'leg609', 'leg610', 'leg611', 'leg612', 'leg613', 'leg614', 'leg615', 'leg616', 'leg617', 'leg618', 'leg619', 'leg620', 'leg621', 'leg622', 'leg623', 'leg624']}]}>
+</Topology>
+);
+
+    ReactDOM.render(
+        element,
+        document.getElementById('content')
+    );
+    </script>
+
+</body>
+</html>
