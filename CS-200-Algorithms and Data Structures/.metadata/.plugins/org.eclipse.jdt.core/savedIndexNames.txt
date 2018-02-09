@@ -1,3 +1,0 @@
-INDEX VERSION 1.129+/Users/Jim/Desktop/CS 200/.metadata/.plugins/org.eclipse.jdt.core
-3376145549.index
-3191657499.index
