@@ -21,9 +21,11 @@ CS 200 is taught using the Java Programming Language and an Object Oriented appr
 
 
 
+
 #### CS 314 Software Engineering
 
 The course introduces students to principles, concepts and techniques associated with team based development of large, complex software systems. Major topics include teamwork, configuration management, project management, requirements, and testing. Students will learn to use associated software tools in the context of a Scrum based Agile development project. It is assumed that students know how to program and debug using the Java language.
+
 
 
 
@@ -38,6 +40,7 @@ CS370 is to understand the broad range of issues that underlie modern Operating 
 + Memory   address translation and virtual memory
 + Storage architecture and File System
 + Virtual Machines
+
 
 
 #### CS 414 Object Oriented Design
@@ -56,6 +59,7 @@ During the course, students will learn to analyze problems and develop conceptua
 + Refactoring.
 
 
+
 #### CS 435 Big Data
 Modern scientific instruments and Internet scale applications generate voluminous data pertaining to vital signs, weather phenomena, social networks that connect millions of users, and the origins of distant planets. Data produced in these settings hold th epromise to significantly advanced knowledge. This course covers fundamental issues in Big Data. The course examines issues related to data organization, storage, retrieval, analysis and knowledge discover at scale. This will include topics such as large scale data analysis, data storage systems, self descriptive data representations, semi structured data models.This course will involve hands on programming assignments and term project using real world datasets.
 
@@ -70,6 +74,7 @@ Topics
 - Data Exchange Model
 
 
+
 #### CS 440 Aritificial Intelligence
 
 - Problem solving Search: DFS, BFS, A* (heuristic search), Iterative Deepening, Negamax with Alpha Beta Pruning Search
@@ -77,6 +82,7 @@ Topics
 - Intro Neural Networks: with Linear Regression Example
 - Intro Classification: with Linear and Nonlinear Logistic Regression
 - Combining Reinforcement with Neural Networks as Q function
+
 
 
 #### CS 445 Machine Learning
@@ -90,6 +96,7 @@ This course covers fundamental concepts and methods of computational data analys
 - develop and apply reinforcement learning algorithms for learning to control complex systems,
 - write scientific reports on computational machine learning methods, results and conclusions,
 - use the latest features in python, including jupyter notebooks.
+
 
 
 #### CS 455 Distributed System
