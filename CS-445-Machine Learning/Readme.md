@@ -13,7 +13,7 @@ This course covers fundamental concepts and methods of computational data analys
 
 Lessions Distributions:
 
-| Courses                                  |
+| Classes                                  |
 | ---------------------------------------- |
 | [01 Course Overview](http://nbviewer.ipython.org/url/www.cs.colostate.edu/~anderson/cs445/notebooks/01%20Course%20Overview.ipynb) |
 | [02 Matrices and Plotting](http://nbviewer.ipython.org/url/www.cs.colostate.edu/~anderson/cs445/notebooks/02%20Matrices%20and%20Plotting.ipynb) |

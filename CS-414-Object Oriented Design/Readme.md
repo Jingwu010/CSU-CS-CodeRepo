@@ -33,6 +33,8 @@ Lessions Distributions:
 | Test Driven Development                  |
 | JUnit parameterized classes and theories |
 | Mockito                                  |
+| UML Activity Diagrams       |
+| Design patterns		|
 | More                                     |
 
 Assignment Distributions:
@@ -40,4 +42,5 @@ Assignment Distributions:
 | Discription                              | Source Code |
 | ---------------------------------------- | ----------- |
 | Test Driven Development Using Java and JUnit |             |
+| Mocking 									|             |
 | more                                     |             |

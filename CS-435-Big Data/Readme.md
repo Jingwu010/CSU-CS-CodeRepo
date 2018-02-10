@@ -34,6 +34,7 @@ Lessions Distributions:
 | ---------------------------------------- |
 | Distributed File System: Google File System |
 | MapReduce                                |
+| MapReduce  Design Pattern                               |
 | More                                     |
 
 
